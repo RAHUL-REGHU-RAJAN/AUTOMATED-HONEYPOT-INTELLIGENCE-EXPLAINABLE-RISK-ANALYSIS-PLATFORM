@@ -171,9 +171,9 @@ The complete project documentation contains the detailed implementation, archite
 
 ### 👤 Author
 
-**<YOUR RAHUL REGHU RAJAN>**
+**RAHUL REGHU RAJAN**
 
-Cybersecurity | Threat Intelligence | Security Automation | Offensive & Defensive Security
+EC-Council Certified Ethical Hacker (CEH v13) | Threat Intelligence | Security Automation | Offensive & Defensive Security
 
 - **LinkedIn:** <[Linkedin/rahul reghu-rajan](https://www.linkedin.com/in/rahul-reghu-rajan/)>
 - **Portfolio:** <[Rahul's Portfolio](https://rahulhub.vercel.app/)>
