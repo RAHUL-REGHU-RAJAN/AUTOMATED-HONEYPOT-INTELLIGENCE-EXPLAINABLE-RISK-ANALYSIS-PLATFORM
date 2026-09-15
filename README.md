@@ -4,7 +4,7 @@
 
 **Python** | **Cowrie** | **SQLite** | **AbuseIPDB** | **Streamlit**
 
-[Documentation](<YOUR-DOCUMENTATION-LINK>) · [Architecture](POC/01-system-architecture.png) · [Dashboard](POC/09-dashboard-overview.png) · [POCs](POC/)
+[Documentation](Documentation/AUTOMATED-HONEYPOT-INTELLIGENCE.pdf) · [Architecture](POC/01-system-architecture.png) · [Dashboard](POC/10a-dashboard-security-overview.png) · [POCs](POC/)
 
 ---
 
@@ -29,61 +29,6 @@ The processed security information is stored in **SQLite** and presented through
 The platform follows a modular pipeline in which attacker activity is captured by Cowrie and automatically processed by the analysis engine. Events are normalized and stored, indicators and behavior are extracted, threat intelligence is added, and multiple risk factors are combined into an explainable risk score. Correlated incidents are then presented through the analyst dashboard.
 
 ---
-
-## 🔄 How It Works
-
-```text
-┌──────────────────────┐
-│   SSH Attacker       │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│   Cowrie Honeypot    │
-│   SSH Interaction    │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Telemetry Collection │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Automated Ingestion  │
-│ & Normalization      │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ IOC & Behavioral     │
-│ Analysis             │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Threat Intelligence  │
-│ Enrichment            │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Explainable Risk     │
-│ Scoring              │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Incident Correlation │
-│ & Automated Reports  │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Security Analyst     │
-│ Dashboard             │
-└──────────────────────┘
-```
 
 ### Workflow Summary
 
@@ -140,21 +85,6 @@ The Streamlit dashboard provides a centralized view of the processed honeypot in
 
 ![Dashboard Overview](POC/09-dashboard-overview.png)
 
-### Security Overview
-
-![Security Overview](POC/10a-dashboard-security-overview.png)
-
-### Investigation & Risk
-
-![Investigation and Risk](POC/10b-dashboard-investigation-risk.png)
-
-### Reporting & Analytics
-
-![Reporting and Analytics](POC/10c-dashboard-reporting-analytics.png)
-
-### Threat Intelligence & Events
-
-![Threat Intelligence and Events](POC/10d-dashboard-threat-intelligence-events.png)
 
 ### 🔬 Proof of Concept Evidence
 
@@ -230,65 +160,23 @@ The project is organized into separate **automation**, **dashboard**, and **POC*
 
 ---
 
-## ⚙️ Setup & Usage
-
-### 1. Clone the Repository
-
-```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd <YOUR-REPOSITORY-NAME>
-```
-
-### 2. Configure Threat Intelligence
-
-The AbuseIPDB API key should be provided through an environment variable rather than stored directly in the source code.
-
-```bash
-export ABUSEIPDB_API_KEY="your_api_key"
-```
-
-### 3. Start Cowrie
-
-Run the Cowrie SSH honeypot in the configured environment and allow it to generate attacker telemetry.
-
-### 4. Run the Automation Pipeline
-
-Execute the automation components in the required workflow to ingest, normalize, analyze, enrich, score, and correlate the collected telemetry.
-
-### 5. Launch the Dashboard
-
-```bash
-streamlit run dashboard/app.py
-```
-
-The dashboard can then be used to review processed events, threat intelligence, risk scores, and correlated incidents.
-
-> **Note:** This project is intended for controlled cybersecurity lab environments. Do not deploy a honeypot or expose security infrastructure without appropriate isolation and authorization.
-
----
-
 ## 📚 Documentation & Author
 
 ### 📄 Full Documentation
 
 The complete project documentation contains the detailed implementation, architecture, methodology, testing, validation, results, and references.
 
-**[📘 View Full Project Documentation](<YOUR-DOCUMENTATION-LINK>)**
+**[📘 View Full Project Documentation](Documentation/AUTOMATED-HONEYPOT-INTELLIGENCE.pdf)**
 
-### 🔗 Project Links
-
-- **[Architecture](POC/01-system-architecture.png)**
-- **[Dashboard](POC/09-dashboard-overview.png)**
-- **[POCs](POC/)**
 
 ### 👤 Author
 
-**<YOUR NAME>**
+**<YOUR RAHUL REGHU RAJAN>**
 
-Cybersecurity | Threat Intelligence | Security Automation
+Cybersecurity | Threat Intelligence | Security Automation | Offensive & Defensive Security
 
-- **LinkedIn:** <YOUR-LINKEDIN-LINK>
-- **GitHub:** <YOUR-GITHUB-LINK>
+- **LinkedIn:** <[Linkedin/rahul reghu-rajan](https://www.linkedin.com/in/rahul-reghu-rajan/)>
+- **Portfolio:** <[Rahul's Portfolio](https://rahulhub.vercel.app/)>
 
 ---
 
