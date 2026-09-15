@@ -4,7 +4,7 @@
 
 **Python** | **Cowrie** | **SQLite** | **AbuseIPDB** | **Streamlit**
 
-[Documentation](Documentation/AUTOMATED-HONEYPOT-INTELLIGENCE.pdf) · [Architecture](POC/01-system-architecture.png) · [Dashboard](POC/10a-dashboard-security-overview.png) · [POCs](POC/)
+[Documentation](Documentation/AUTOMATED%20HONEYPOT%20INTELLIGENCE.pdf) · [Architecture](POC/01-system-architecture.png) · [Dashboard](POC/10a-dashboard-security-overview.png) · [POCs](POC/)
 
 ---
 
@@ -83,7 +83,7 @@ The Streamlit dashboard provides a centralized view of the processed honeypot in
 
 ### Dashboard Overview
 
-![Dashboard Overview](POC/09-dashboard-overview.png)
+![Dashboard Overview](POC/10a-dashboard-security-overview.png)
 
 
 ### 🔬 Proof of Concept Evidence
@@ -166,7 +166,7 @@ The project is organized into separate **automation**, **dashboard**, and **POC*
 
 The complete project documentation contains the detailed implementation, architecture, methodology, testing, validation, results, and references.
 
-**[📘 View Full Project Documentation](Documentation/AUTOMATED-HONEYPOT-INTELLIGENCE.pdf)**
+**[📘 View Full Project Documentation](Documentation/AUTOMATED%20HONEYPOT%20INTELLIGENCE.pdf)**
 
 
 ### 👤 Author
